@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Main_menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Main_menu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>0 Homa, 9.75pt</value>
+  </data>
+  <data name="BomCemical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 28</value>
+  </data>
+  <data name="BomCemical.Text" xml:space="preserve">
+    <value>ثبت مواد اولیه</value>
+  </data>
+  <data name="BomCreate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 28</value>
+  </data>
+  <data name="BomCreate.Text" xml:space="preserve">
+    <value>فرمول ساخت محصولات</value>
+  </data>
+  <data name="BomSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 28</value>
+  </data>
+  <data name="BomSearch.Text" xml:space="preserve">
+    <value>جستجو و ویرایش</value>
+  </data>
+  <data name="BOM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 27</value>
+  </data>
+  <data name="BOM.Text" xml:space="preserve">
+    <value>فرمول ساخت</value>
+  </data>
+  <data name="PlaningAsk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 28</value>
+  </data>
+  <data name="PlaningAsk.Text" xml:space="preserve">
+    <value>درخواست مواد اولیه و بسته بندی</value>
+  </data>
+  <data name="PlaningProduction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 28</value>
+  </data>
+  <data name="PlaningProduction.Text" xml:space="preserve">
+    <value>برنامه تولید</value>
+  </data>
+  <data name="PlaningRedo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 28</value>
+  </data>
+  <data name="PlaningRedo.Text" xml:space="preserve">
+    <value>درخواست دوباره کاری</value>
+  </data>
+  <data name="Planing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 27</value>
+  </data>
+  <data name="Planing.Text" xml:space="preserve">
+    <value>برنامه ریزی</value>
+  </data>
+  <data name="StoreSell.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 28</value>
+  </data>
+  <data name="StoreSell.Text" xml:space="preserve">
+    <value>فروش محصول</value>
+  </data>
+  <data name="Store.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 27</value>
+  </data>
+  <data name="Store.Text" xml:space="preserve">
+    <value>فروشگاه</value>
+  </data>
+  <data name="مالیToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 27</value>
+  </data>
+  <data name="مالیToolStripMenuItem.Text" xml:space="preserve">
+    <value>مالی</value>
+  </data>
+  <data name="گزارشروزانهتولیدToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="گزارشروزانهتولیدToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش روزانه تولید</value>
+  </data>
+  <data name="گزارشروزانهاستریلیزاسیونToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="گزارشروزانهاستریلیزاسیونToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش روزانه استریلیزاسیون</value>
+  </data>
+  <data name="گزارشروزانهدریافتشیرخامToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="گزارشروزانهدریافتشیرخامToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش روزانه دریافت شیر خام</value>
+  </data>
+  <data name="گزارشروزانهCIPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="گزارشروزانهCIPToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش روزانه CIP</value>
+  </data>
+  <data name="گزارشکارکرددستگاهبستهبندیتتراپکToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="گزارشکارکرددستگاهبستهبندیتتراپکToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش کارکرد دستگاه بسته بندی تتراپک</value>
+  </data>
+  <data name="گزارشروزانهقسمتموادزنیمحصولاتToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="گزارشروزانهقسمتموادزنیمحصولاتToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش روزانه قسمت مواد زنی محصولات</value>
+  </data>
+  <data name="ثبتگزارشروزانهپاستورToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="ثبتگزارشروزانهپاستورToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش روزانه پاستور</value>
+  </data>
+  <data name="ثبتگزارشتولیدآبآشامیدنیToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="ثبتگزارشتولیدآبآشامیدنیToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش تولید آب آشامیدنی</value>
+  </data>
+  <data name="ثبتفرمدوبارهکاریتولیدToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="ثبتفرمدوبارهکاریتولیدToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت فرم دوباره کاری تولید</value>
+  </data>
+  <data name="ثبتکنترلدمایدستگاهپرکنیToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 28</value>
+  </data>
+  <data name="ثبتکنترلدمایدستگاهپرکنیToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت کنترل دمای دستگاه پرکنی</value>
+  </data>
+  <data name="تولیدوکارکردToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 27</value>
+  </data>
+  <data name="تولیدوکارکردToolStripMenuItem.Text" xml:space="preserve">
+    <value>تولید و کارکرد</value>
+  </data>
+  <data name="شناسنامهپالتToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 28</value>
+  </data>
+  <data name="شناسنامهپالتToolStripMenuItem.Text" xml:space="preserve">
+    <value>شناسنامه پالت</value>
+  </data>
+  <data name="ثبتگزارشروزانهتحویلمحصولبهانبارToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 28</value>
+  </data>
+  <data name="ثبتگزارشروزانهتحویلمحصولبهانبارToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش روزانه تحویل محصول به انبار</value>
+  </data>
+  <data name="ثبتگزارشاقلامبرگشتیبهانبارToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 28</value>
+  </data>
+  <data name="ثبتگزارشاقلامبرگشتیبهانبارToolStripMenuItem.Text" xml:space="preserve">
+    <value>ثبت گزارش اقلام برگشتی به انبار</value>
+  </data>
+  <data name="انبارToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 27</value>
+  </data>
+  <data name="انبارToolStripMenuItem.Text" xml:space="preserve">
+    <value>انبار</value>
+  </data>
+  <data name="NewUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 28</value>
+  </data>
+  <data name="NewUser.Text" xml:space="preserve">
+    <value>ثبت کاربر جدید</value>
+  </data>
+  <data name="UserManage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 27</value>
+  </data>
+  <data name="UserManage.Text" xml:space="preserve">
+    <value>مدیریت کاربران</value>
+  </data>
+  <data name="Main_menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Main_menu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 5, 0, 5</value>
+  </data>
+  <data name="Main_menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1069, 37</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Main_menu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Main_menu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;Main_menu.Name" xml:space="preserve">
+    <value>Main_menu</value>
+  </data>
+  <data name="&gt;&gt;Main_menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Main_menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Main_menu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>11, 28</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1069, 608</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>0 Homa, 11.25pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>صفحه اصلی</value>
+  </data>
+  <data name="&gt;&gt;BOM.Name" xml:space="preserve">
+    <value>BOM</value>
+  </data>
+  <data name="&gt;&gt;BOM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BomCemical.Name" xml:space="preserve">
+    <value>BomCemical</value>
+  </data>
+  <data name="&gt;&gt;BomCemical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BomCreate.Name" xml:space="preserve">
+    <value>BomCreate</value>
+  </data>
+  <data name="&gt;&gt;BomCreate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BomSearch.Name" xml:space="preserve">
+    <value>BomSearch</value>
+  </data>
+  <data name="&gt;&gt;BomSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Planing.Name" xml:space="preserve">
+    <value>Planing</value>
+  </data>
+  <data name="&gt;&gt;Planing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlaningAsk.Name" xml:space="preserve">
+    <value>PlaningAsk</value>
+  </data>
+  <data name="&gt;&gt;PlaningAsk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlaningProduction.Name" xml:space="preserve">
+    <value>PlaningProduction</value>
+  </data>
+  <data name="&gt;&gt;PlaningProduction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlaningRedo.Name" xml:space="preserve">
+    <value>PlaningRedo</value>
+  </data>
+  <data name="&gt;&gt;PlaningRedo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Store.Name" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="&gt;&gt;Store.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StoreSell.Name" xml:space="preserve">
+    <value>StoreSell</value>
+  </data>
+  <data name="&gt;&gt;StoreSell.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;مالیToolStripMenuItem.Name" xml:space="preserve">
+    <value>مالیToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;مالیToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;تولیدوکارکردToolStripMenuItem.Name" xml:space="preserve">
+    <value>تولیدوکارکردToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;تولیدوکارکردToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهتولیدToolStripMenuItem.Name" xml:space="preserve">
+    <value>گزارشروزانهتولیدToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهتولیدToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهاستریلیزاسیونToolStripMenuItem.Name" xml:space="preserve">
+    <value>گزارشروزانهاستریلیزاسیونToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهاستریلیزاسیونToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهدریافتشیرخامToolStripMenuItem.Name" xml:space="preserve">
+    <value>گزارشروزانهدریافتشیرخامToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهدریافتشیرخامToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهCIPToolStripMenuItem.Name" xml:space="preserve">
+    <value>گزارشروزانهCIPToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهCIPToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;گزارشکارکرددستگاهبستهبندیتتراپکToolStripMenuItem.Name" xml:space="preserve">
+    <value>گزارشکارکرددستگاهبستهبندیتتراپکToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;گزارشکارکرددستگاهبستهبندیتتراپکToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهقسمتموادزنیمحصولاتToolStripMenuItem.Name" xml:space="preserve">
+    <value>گزارشروزانهقسمتموادزنیمحصولاتToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;گزارشروزانهقسمتموادزنیمحصولاتToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشروزانهپاستورToolStripMenuItem.Name" xml:space="preserve">
+    <value>ثبتگزارشروزانهپاستورToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشروزانهپاستورToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشتولیدآبآشامیدنیToolStripMenuItem.Name" xml:space="preserve">
+    <value>ثبتگزارشتولیدآبآشامیدنیToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشتولیدآبآشامیدنیToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ثبتفرمدوبارهکاریتولیدToolStripMenuItem.Name" xml:space="preserve">
+    <value>ثبتفرمدوبارهکاریتولیدToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ثبتفرمدوبارهکاریتولیدToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ثبتکنترلدمایدستگاهپرکنیToolStripMenuItem.Name" xml:space="preserve">
+    <value>ثبتکنترلدمایدستگاهپرکنیToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ثبتکنترلدمایدستگاهپرکنیToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;انبارToolStripMenuItem.Name" xml:space="preserve">
+    <value>انبارToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;انبارToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;شناسنامهپالتToolStripMenuItem.Name" xml:space="preserve">
+    <value>شناسنامهپالتToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;شناسنامهپالتToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشروزانهتحویلمحصولبهانبارToolStripMenuItem.Name" xml:space="preserve">
+    <value>ثبتگزارشروزانهتحویلمحصولبهانبارToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشروزانهتحویلمحصولبهانبارToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشاقلامبرگشتیبهانبارToolStripMenuItem.Name" xml:space="preserve">
+    <value>ثبتگزارشاقلامبرگشتیبهانبارToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ثبتگزارشاقلامبرگشتیبهانبارToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserManage.Name" xml:space="preserve">
+    <value>UserManage</value>
+  </data>
+  <data name="&gt;&gt;UserManage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NewUser.Name" xml:space="preserve">
+    <value>NewUser</value>
+  </data>
+  <data name="&gt;&gt;NewUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
