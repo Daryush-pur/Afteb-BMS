@@ -256,6 +256,7 @@
             this.txtEdit.ReadOnly = true;
             this.txtEdit.Size = new System.Drawing.Size(208, 35);
             this.txtEdit.TabIndex = 21;
+            this.txtEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtDoccode
             // 
@@ -264,6 +265,7 @@
             this.txtDoccode.ReadOnly = true;
             this.txtDoccode.Size = new System.Drawing.Size(237, 35);
             this.txtDoccode.TabIndex = 22;
+            this.txtDoccode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn_delete
             // 
@@ -283,6 +285,7 @@
             this.btn_deleterow.TabIndex = 24;
             this.btn_deleterow.Text = "حذف سطر";
             this.btn_deleterow.UseVisualStyleBackColor = true;
+            this.btn_deleterow.Click += new System.EventHandler(this.btn_deleterow_Click);
             // 
             // BomShow
             // 

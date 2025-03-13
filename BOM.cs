@@ -203,7 +203,7 @@ namespace AFTAB
                             bom.Parameters.AddWithValue("@cip", cip);
                             bom.Parameters.AddWithValue("@optimal", optimal);
                             bom.Parameters.AddWithValue("@prepration", prepration);
-                            bom.Parameters.Add("@date", SqlDbType.Date).Value = DateTime.Now.Date;
+                            bom.Parameters.AddWithValue("@date", SqlDbType.Date).Value = DateTime.Now.Date;
                             bom.Parameters.AddWithValue("@doc", text_doc.Text);
                             bom.Parameters.AddWithValue("@review", text_review.Text);
 

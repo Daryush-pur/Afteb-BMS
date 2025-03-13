@@ -299,7 +299,7 @@ namespace AFTAB
                             try
                             {
                                 String update = "UPDATE Bom SET ProductName = @name, BomNumber = @number, CipTime = @cip, OptimalTime = @optimal," +
-                                    " PreprationTime = @pre, Machine = @machine, DocCode = @doc, ReviewNumber = @review WHERE ProductCode = @product;";
+                                    " PreprationTime = @pre,Volume = @vol, Machine = @machine, DocCode = @doc, ReviewNumber = @review WHERE ProductCode = @product;";
                                 using (SqlCommand cmd = new SqlCommand(update, conn, transaction))
                                 {
                                     TimeSpan cip = ParseTimeSpan(txtCipTime.Text);
@@ -316,6 +316,7 @@ namespace AFTAB
                                     cmd.Parameters.AddWithValue("@machine", txtMachine.Text);
                                     cmd.Parameters.AddWithValue("@doc", txtDoccode.Text);
                                     cmd.Parameters.AddWithValue("@review", txtEdit.Text);
+                                    cmd.Parameters.AddWithValue("@vol", int.Parse(txtVolume.Text));
                                     cmd.ExecuteNonQuery();
                                 }
 
@@ -459,6 +460,26 @@ namespace AFTAB
                 }
             }
             
+        }
+
+        private void btn_deleterow_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewBom.SelectedRows.Count > 0)
+            {
+                DataGridViewRow Selected = dataGridViewBom.SelectedRows[0];
+                int foriegenkey = Convert.ToInt32(Selected.Cells["MaterialCode"].Value);
+
+                using (SqlConnection conn = new SqlConnection(connection))
+                {
+                    conn.Open();
+                    string query = $"DELETE FROM MaterialToBom WHERE MaterialCode = @PrimaryKeyValue And ProductCode = @product";
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@PrimaryKeyValue", foriegenkey);
+                    command.Parameters.AddWithValue("@ProductCode", int.Parse(txtProductCode.Text));
+                    command.ExecuteNonQuery();
+                    conn.Close();
+                }
+            }
         }
     }
 }
