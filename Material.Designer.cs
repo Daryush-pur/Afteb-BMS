@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(413, 32);
+            this.label2.Location = new System.Drawing.Point(41, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 29);
             this.label2.TabIndex = 1;
@@ -77,7 +77,7 @@
             // 
             // text_code
             // 
-            this.text_code.Location = new System.Drawing.Point(524, 29);
+            this.text_code.Location = new System.Drawing.Point(152, 136);
             this.text_code.Name = "text_code";
             this.text_code.Size = new System.Drawing.Size(233, 37);
             this.text_code.TabIndex = 4;
@@ -94,7 +94,7 @@
             // btn_submit
             // 
             this.btn_submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_submit.Location = new System.Drawing.Point(540, 257);
+            this.btn_submit.Location = new System.Drawing.Point(102, 246);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(102, 40);
             this.btn_submit.TabIndex = 6;
@@ -105,7 +105,7 @@
             // btn_cancel
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btn_cancel.Location = new System.Drawing.Point(651, 257);
+            this.btn_cancel.Location = new System.Drawing.Point(213, 246);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(112, 40);
             this.btn_cancel.TabIndex = 7;
@@ -116,7 +116,7 @@
             // radio_cemical
             // 
             this.radio_cemical.AutoSize = true;
-            this.radio_cemical.Location = new System.Drawing.Point(646, 81);
+            this.radio_cemical.Location = new System.Drawing.Point(274, 188);
             this.radio_cemical.Name = "radio_cemical";
             this.radio_cemical.Size = new System.Drawing.Size(110, 33);
             this.radio_cemical.TabIndex = 8;
@@ -128,7 +128,7 @@
             // radio_raw
             // 
             this.radio_raw.AutoSize = true;
-            this.radio_raw.Location = new System.Drawing.Point(554, 81);
+            this.radio_raw.Location = new System.Drawing.Point(182, 188);
             this.radio_raw.Name = "radio_raw";
             this.radio_raw.Size = new System.Drawing.Size(86, 33);
             this.radio_raw.TabIndex = 9;
@@ -140,7 +140,7 @@
             // radio_packeting
             // 
             this.radio_packeting.AutoSize = true;
-            this.radio_packeting.Location = new System.Drawing.Point(430, 81);
+            this.radio_packeting.Location = new System.Drawing.Point(58, 188);
             this.radio_packeting.Name = "radio_packeting";
             this.radio_packeting.Size = new System.Drawing.Size(118, 33);
             this.radio_packeting.TabIndex = 10;
@@ -153,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(776, 309);
+            this.ClientSize = new System.Drawing.Size(418, 304);
             this.Controls.Add(this.radio_packeting);
             this.Controls.Add(this.radio_raw);
             this.Controls.Add(this.radio_cemical);
