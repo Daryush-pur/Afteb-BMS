@@ -153,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(418, 304);
+            this.ClientSize = new System.Drawing.Size(418, 351);
             this.Controls.Add(this.radio_packeting);
             this.Controls.Add(this.radio_raw);
             this.Controls.Add(this.radio_cemical);
@@ -166,6 +166,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("0 Homa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.MaximumSize = new System.Drawing.Size(434, 390);
             this.Name = "Material";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
