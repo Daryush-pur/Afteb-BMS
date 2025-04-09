@@ -467,18 +467,18 @@ namespace AFTAB
             if (dataGridViewBom.SelectedRows.Count > 0)
             {
                 DataGridViewRow Selected = dataGridViewBom.SelectedRows[0];
-                int foriegenkey = Convert.ToInt32(Selected.Cells["MaterialCode"].Value);
 
                 using (SqlConnection conn = new SqlConnection(connection))
                 {
                     conn.Open();
                     string query = $"DELETE FROM MaterialToBom WHERE MaterialCode = @PrimaryKeyValue And ProductCode = @product";
                     SqlCommand command = new SqlCommand(query, conn);
-                    command.Parameters.AddWithValue("@PrimaryKeyValue", foriegenkey);
-                    command.Parameters.AddWithValue("@ProductCode", int.Parse(txtProductCode.Text));
+                    command.Parameters.AddWithValue("@PrimaryKeyValue", Selected.Cells["MaterialCode"].Value.ToString());
+                    command.Parameters.AddWithValue("@Product", txtProductCode.Text);
                     command.ExecuteNonQuery();
                     conn.Close();
                 }
+                FetchData();
             }
         }
     }
