@@ -310,9 +310,9 @@ namespace AFTAB
                                     cmd.Parameters.AddWithValue("@product", txtProductCode.Text);
                                     cmd.Parameters.AddWithValue("@name", txtProductName.Text);
                                     cmd.Parameters.AddWithValue("@number", txtBomNumber.Text);
-                                    cmd.Parameters.AddWithValue("@cip", cip);
-                                    cmd.Parameters.AddWithValue("@optimal", optimal);
-                                    cmd.Parameters.AddWithValue("@pre", prepration);
+                                    cmd.Parameters.AddWithValue("@cip", cip.ToString(@"hh\:mm\:ss"));
+                                    cmd.Parameters.AddWithValue("@optimal", optimal.ToString(@"hh\:mm\:ss"));
+                                    cmd.Parameters.AddWithValue("@pre", prepration.ToString(@"hh\:mm\:ss"));
                                     cmd.Parameters.AddWithValue("@machine", txtMachine.Text);
                                     cmd.Parameters.AddWithValue("@doc", txtDoccode.Text);
                                     cmd.Parameters.AddWithValue("@review", txtEdit.Text);
@@ -353,7 +353,7 @@ namespace AFTAB
                                             {
                                                 cmd.Parameters.AddWithValue("@ProductCode", txtProductCode.Text ?? (object)DBNull.Value);
                                                 cmd.Parameters.AddWithValue("@MaterialCode", column2 ?? (object)DBNull.Value);
-                                                cmd.Parameters.AddWithValue("@Factor", column3 ?? (object)DBNull.Value);
+                                                cmd.Parameters.AddWithValue("@Factor", string.IsNullOrEmpty(column3) ? (object)DBNull.Value : decimal.Parse(column3));
                                                 cmd.Parameters.AddWithValue("@UnitName", column4 ?? (object)DBNull.Value);
                                                 cmd.ExecuteNonQuery();
                                             }
@@ -365,8 +365,7 @@ namespace AFTAB
                                             {
                                                 cmd.Parameters.AddWithValue("@ProductCode", txtProductCode.Text ?? (object)DBNull.Value);
                                                 cmd.Parameters.AddWithValue("@MaterialCode", column2 ?? (object)DBNull.Value);
-                                                cmd.Parameters.AddWithValue("@Factor", column3 ?? (object)DBNull.Value);
-                                                cmd.Parameters.AddWithValue("@UnitName", column4 ?? (object)DBNull.Value);
+                                                cmd.Parameters.AddWithValue("@Factor", string.IsNullOrEmpty(column3) ? (object)DBNull.Value : decimal.Parse(column3)); cmd.Parameters.AddWithValue("@UnitName", column4 ?? (object)DBNull.Value);
                                                 cmd.ExecuteNonQuery();
                                             }
                                         }
@@ -389,23 +388,22 @@ namespace AFTAB
         }
         private TimeSpan ParseTimeSpan(string timeString)
         {
+            if (string.IsNullOrWhiteSpace(timeString))
+                return TimeSpan.Zero;
+
             if (timeString.Contains(":"))
             {
-                // If the time is in hh:mm format
                 var timeParts = timeString.Split(':');
-                if (timeParts.Length == 2)
+                if (timeParts.Length == 2 &&
+                    int.TryParse(timeParts[0], out int hours) &&
+                    int.TryParse(timeParts[1], out int minutes))
                 {
-                    int hours = int.Parse(timeParts[0]);
-                    int minutes = int.Parse(timeParts[1]);
-                    return new TimeSpan(hours, minutes, 0);  // Return as TimeSpan
+                    return new TimeSpan(hours, minutes, 0);
                 }
             }
-            else
-            {
 
-            }
-
-            return TimeSpan.Zero; // Default to 00:00:00 if the format is invalid
+            // Handle other cases or throw exception for invalid format
+            throw new FormatException("Invalid time format. Expected hh:mm");
         }
         private bool ValidateRow(DataGridViewRow row)
         {
